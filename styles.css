@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+h1{
+    color: black;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+img{
+    object-fit: cover;
+    height: 25rem;
+    width: 25rem;
+    border-radius: 50%;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem; 
+    margin-top: 1rem;
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    
+
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    gap: 5rem;
+}
+#user-score,#comp-score{
+    font-size: 4rem;
+}
+.message{
+    margin-top: 1.5rem;
+}
+#msg{
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+@media (max-width: 768px) {
+    /* Adjust the size of the heading */
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Images styling */
+    img {
+        width: 6rem; 
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Stack choices vertically */
+    .choices {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; /* Add spacing between choices */
+    }
+
+    /* Style each choice */
+    .choice {
+        display: flex;
+        flex-direction: column; /* Stack content inside each choice vertically */
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Adjust the score-board to display scores horizontally */
+    .score-board {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center; 
+        align-items: center;
+        font-size: 1.5rem; 
+        margin-top: 1rem; 
+        gap: 2.5rem;
+    }
+
+    /* Adjust user and computer scores */
+    #user-score,
+    #comp-score {
+        flex: none;
+        font-size: 2rem; /* Reduce font size */
+        text-align: center; /* Ensure text is centered */
+    }
+
+    /* Center the message container */
+    .message {
+        margin-top: 1rem; /* Adjust margin */
+        text-align: center; /* Center text */
+        width: 100%; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    #msg {
+        font-size: 1.5rem; /* Adjust font size */
+        padding: 0.75rem; /* Adjust padding */
+        border-radius: 0.75rem; 
+        text-align: center; /* Center text inside */
+        display: inline-block; /* Ensure proper width for text */
+        margin: 0 auto; /* Center within parent */
+    }
+}
+
+
+
+
